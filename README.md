@@ -1,3 +1,10 @@
+# visual-bootstrap-colors 
+
+Preview your Twitter Bootstrap color selections when using the Twitter Bootstrap customization page.
+
+Get it from the Chrome store: https://chrome.google.com/webstore/detail/goiinnapmompihndmebfdelnhlfhmmap
+
+
 # License
 
 Copyright (C) 2012 Lucas Myers
