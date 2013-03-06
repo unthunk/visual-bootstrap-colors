@@ -18,6 +18,50 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 # Release Notes
 
+## 0.3
+
+Added support for additional less variables:
+
+* @heroUnitHeadingColor
+* @heroUnitLeadColor
+* @navbarBackground
+* @navbarBackgroundHighlight
+* @navbarText
+* @navbarBrandColor
+* @dropdownLinkColor
+* @navbarLinkColorHover
+* @navbarLinkColorActive
+* @navbarLinkBackgroundHover
+* @navbarLinkBackgroundActive
+* @navbarSearchBackground
+* @navbarSearchBackgroundFocus
+* @@navbarSearchBorder
+* @navbarSearchPlaceholderColor
+* @dropdownBackground
+* @dropdownBorder
+* @dropdownLinkColor
+* @dropdownLinkColorHover
+* @dropdownLinkBackgroundHover
+* @tableBackground
+* @tableBackgroundAccent
+* @tableBackgroundHover
+* @tableBorder
+* @placeholderText
+* @inputBackground
+* @inputBorder
+* @inputDisabledBackground
+* @formActionsBackground
+* @btnPrimaryBackground
+* @btnPrimaryBackgroundHighlight
+* @warningText
+* @warningBackground
+* @errorText
+* @errorBackground
+* @successText
+* @successBackground
+* @infoText
+* @infoBackground
+
 ## 0.2
 
 Added support for additional less variables:
