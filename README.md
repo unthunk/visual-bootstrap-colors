@@ -1,4 +1,4 @@
-# visual-bootstrap-colors 
+# visual-bootstrap-colors
 
 Preview your Twitter Bootstrap color selections when using the Twitter Bootstrap customization page.
 
@@ -17,6 +17,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 
 # Release Notes
+
+## 0.4
+Bootstrap 2.3.3 cusomtization page moved to http://getbootstrap.com/2.3.2/customize.html, updated extensiosn to point to it until 3.0 customization is up and running.
 
 ## 0.3
 
