@@ -1,6 +1,6 @@
 {
 	"name": "Visual Bootstrap Colors",
-	"version": "0.4",
+	"version": "0.5",
 	"manifest_version": 2,
 	"description": "Preview your Twitter Bootstrap color selections when using the Twitter Bootstrap customization page.",
 	"background": { "scripts": ["background.js"]},
@@ -16,12 +16,12 @@
 	},
 
 	"permissions": [
-		"tabs", "*://getbootstrap.com/2.3.2/customize.html*"
+		"tabs", "*://getbootstrap.com/2.3.2/customize.html*", "*://getbootstrap.com/customize*"
 	],
 
 	"content_scripts" : [
 		{
-			"matches": ["*://getbootstrap.com/2.3.2/customize.html*"],
+			"matches": ["*://getbootstrap.com/2.3.2/customize.html*","*://getbootstrap.com/customize*"],
 			"js": ["jquery.min.js","color.js"]
 		}
 	]
