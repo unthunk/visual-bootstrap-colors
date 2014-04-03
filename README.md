@@ -18,6 +18,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 # Release Notes
 
+## 0.6
+Updated to support Bootstrap 3.1.
+
 ## 0.5
 Added support for Bootstrap 3.0 update.  Extension now supports 2.3.2 and 3 customization pages: http://getbootstrap.com/2.3.2/customize.html and http://getbootstrap.com/customize.
 

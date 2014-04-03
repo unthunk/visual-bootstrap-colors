@@ -92,8 +92,8 @@ M~::::::::::::::::~:~:M:. ....+++++++++++++++++++++++++++++++++++++++++++++++D+.
 $(function() {
 	'use strict';
 
-	$('input[placeholder]').colorBootsrap();
-	$('input[placeholder]').on('input',function(){
+	$('input[placeholder],input[data-var]').colorBootsrap();
+	$('input[placeholder],input[data-var]').on('input',function(){
 		$(this).colorBootsrap();
 	});
 });
@@ -123,18 +123,17 @@ $(function() {
 				'@fff':                   '#fff',
 			}
 		},
-		placeholders = $('input[placeholder]');
+		placeholders = $('input[placeholder],input[data-var]');
 
 	$.fn.colorBootsrap = function() {
 
 		this.each(function() {
 			// check input field for a value, otherwise use the placeholder value
-			var color = $(this).val().length > 0 ? $(this).val() : $(this).attr('placeholder'),
+			var color = $(this).val().length > 0 ? $(this).val() : $(this).attr('placeholder').length > 0 ? $(this).attr('placeholder') : $(this).attr('data-var'),
 				i = COLORS.lessColors.indexOf(color),
 				lessColor,
 				label,
 				labelText;
-
 			// if the color value is a less color variable, set the color value to use that variable's value
 			if(i >= 0) {
 				lessColor = color;
@@ -158,7 +157,7 @@ $(function() {
 				if(COLORS.lessColors.indexOf(labelText) >= 0) {
 					$(placeholders).each(function() {
 						var val = $(this).val(),
-							changeColor = val && val === labelText || !val && $(this).attr('placeholder') === labelText ? true : false;
+							changeColor = val && val === labelText || !val && $(this).attr('placeholder') === labelText|| !val && $(this).attr('data-var') === labelText  ? true : false;
 						if(changeColor) {
 							$(this).prev('label').css('color',color);
 						}
